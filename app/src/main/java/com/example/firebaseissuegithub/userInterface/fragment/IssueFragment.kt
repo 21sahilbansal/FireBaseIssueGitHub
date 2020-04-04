@@ -38,8 +38,10 @@ class IssueFragment : BaseFragment(),AdpterCallBack {
         viewModel.getIssuesList()?.observe(this, Observer {
             it.data?.let {
                 setIssueData(it)
+            }?: kotlin.run {
+                handleError(it.throwable!!)
+                showLoadingState(false)
             }
-
         })
     }
 
