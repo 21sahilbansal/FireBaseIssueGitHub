@@ -1,4 +1,4 @@
-# FireBaseIssueGitHub
+# FireBase-IOSIssueGitHub
 This App shows list of firebaseissues and comments associated with the issues
 * **It uses** 
 * **Retrofit**
